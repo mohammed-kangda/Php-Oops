@@ -17,7 +17,7 @@
         private $servername = 'localhost';
         private $username = 'root';
         private $password = "";
-        private $database = "test";
+        private $database = "newtest";
 
         private $mysqli = "";
         private $result = array();

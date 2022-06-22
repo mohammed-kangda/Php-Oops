@@ -19,11 +19,11 @@
     // echo '</pre>';
 
 
-    $obj->delete('testtbl',"name='CHK' AND Age=18");
-    echo '<pre>';
-    echo 'Delete Result Is : ';
-    print_r($obj->getResult());
-    echo '</pre>';
+    // $obj->delete('testtbl',"name='CHK' AND Age=18");
+    // echo '<pre>';
+    // echo 'Delete Result Is : ';
+    // print_r($obj->getResult());
+    // echo '</pre>';
 
 
     // $obj->sql('SELECT * FROM testtbl');
@@ -33,13 +33,13 @@
     // echo '</pre>';
 
     
-    // $join = "citytb ON students.city = citytb.cid";
-    // $colName = "students.id,students.student_name,citytb.cname";
-    // $obj->select('students',$colName,$join,null,null,2);
-    // echo '<pre>';
-    // echo 'Select Result Is : ';
-    // print_r($obj->getResult());
-    // echo '</pre>';
+    $join = "citytb ON students.city = citytb.cid";
+    $colName = "students.id,students.student_name,citytb.cname";  
+    $obj->select('students',$colName,$join,null,null,2);
+    echo '<pre>';
+    echo 'Select Result Is : ';
+    print_r($obj->getResult());
+    echo '</pre>';
 
     // echo $obj->pagination('students',$join,null,2);
 
